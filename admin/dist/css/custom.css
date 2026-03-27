@@ -1,0 +1,79 @@
+﻿/* Tùy chỉnh cho nhà hàng Hương Quê */
+:root {
+    --restaurant-primary: #DA9F5B;
+    --restaurant-secondary: #33211D;
+}
+
+/* Màu sắc tùy chỉnh */
+.bg-restaurant {
+    background-color: var(--restaurant-primary) !important;
+}
+
+.text-restaurant {
+    color: var(--restaurant-primary) !important;
+}
+
+.btn-restaurant {
+    background-color: var(--restaurant-primary);
+    border-color: var(--restaurant-primary);
+    color: #fff;
+}
+
+    .btn-restaurant:hover {
+        background-color: #c47d3a;
+        border-color: #c47d3a;
+        color: #fff;
+    }
+
+/* Card mở rộng */
+.card.expanded {
+    min-height: 400px;
+}
+
+.card .expand-content {
+    display: none;
+    padding-top: 15px;
+    border-top: 1px solid #dee2e6;
+    margin-top: 15px;
+}
+
+.card.expanded .expand-content {
+    display: block;
+}
+
+.btn-expand {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+    .btn-expand.rotated {
+        transform: rotate(180deg);
+    }
+
+/* Hiệu ứng hover cho small box */
+.small-box {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .small-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+
+/* Tùy chỉnh bảng */
+.table-restaurant th {
+    background-color: var(--restaurant-primary);
+    color: #fff;
+}
+
+/* Badge tùy chỉnh */
+.badge-restaurant {
+    background-color: var(--restaurant-primary);
+    color: #fff;
+}
+
+/* Sidebar active menu */
+.nav-sidebar .nav-item .nav-link.active {
+    background-color: var(--restaurant-primary);
+    color: #fff !important;
+}
